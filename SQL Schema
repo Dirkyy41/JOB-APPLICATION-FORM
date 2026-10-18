@@ -1,0 +1,14 @@
+CREATE TABLE navy_applications (
+    application_id INT AUTO_INCREMENT PRIMARY KEY,
+    first_name VARCHAR(50) NOT NULL,
+    last_name VARCHAR(50) NOT NULL,
+    age INT NOT NULL,
+    sex VARCHAR(10) NOT NULL,
+    address VARCHAR(150) NOT NULL,
+    educational_attainment VARCHAR(100) NOT NULL,
+    height_cm DECIMAL(5,2) NOT NULL,
+    weight_kg DECIMAL(5,2) NOT NULL,
+    contact_number VARCHAR(20) NOT NULL,
+    desired_position VARCHAR(100) NOT NULL,
+    date_added TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
